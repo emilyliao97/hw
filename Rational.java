@@ -35,6 +35,10 @@ public class Rational {
     }
 
     //Methods
+    public double floatValue() {
+	return ((double) numer) / denom;
+    }
+
     public void multiply(Rational a) {
 	numer *= a.numer;
 	denom *= a.denom;
@@ -112,6 +116,9 @@ public class Rational {
 	System.out.println(b);
 	Rational c = new Rational(3, 0);
 	System.out.println(c);
+
+	//Testing floatValue
+	System.out.println(b.floatValue());
 
 	//Testing Multiply
 	Rational d = new Rational(2, 3);
