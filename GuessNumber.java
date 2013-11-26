@@ -65,7 +65,10 @@ public class GuessNumber {
 	int guess = Keyboard.readInt();
        	if (guess == _target){
 	    _guessCtr += 1;
-	    t="GREAT JOB! YOU GUESSED THE NUMBER IN "+_guessCtr+" GUESSES!/n";
+	    if (_guessCtr == 1 ) 
+	    	t="GREAT JOB YOU GUESS THE NUMBER IN "+_guessCtr+" GUESS!/n";
+	    else
+	    	t="GREAT JOB YOU GUESS THE NUMBER IN "+_guessCtr+" GUESSES!/n";
 	    System.out.print(t);
 	}
 	else {
